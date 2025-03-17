@@ -130,7 +130,7 @@ const Secondcompo: React.FC = () => {
             </div>
 
             {/* Sketch 2 */}
-            <div className="sketch2 h-[230px] w-[190px] md:h-[300px] md:w-[250px] rounded-lg overflow-hidden mt-8 md:mt-0 md:ml-[30px]">
+            <div className="sketch2 h-[230px] w-[190px] md:h-[300px] md:w-[250px] rounded-lg overflow-hidden mt-8 md:mt-0 md:ml-[30px] mr-[20px]">
               <Image
                 src={boxData[selectedBox].images.sketch2}
                 alt="Sketch 2"
