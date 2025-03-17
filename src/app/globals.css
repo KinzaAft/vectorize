@@ -1,0 +1,140 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+.logo {
+  height: 45px;
+  width: 170px;
+  background-image: url('/Vectorize-removebg-preview.png');
+  background-size:cover ;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+}
+/* styles/globals.css */
+@keyframes float1 {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(50px, 100px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes float2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-80px, 150px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes float3 {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(120px, -50px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.animate-float1 {
+  animation: float1 8s ease-in-out infinite;
+}
+
+.animate-float2 {
+  animation: float2 12s ease-in-out infinite;
+}
+
+.animate-float3 {
+  animation: float3 10s ease-in-out infinite;
+}
+.box1 {
+  background-image: url('/p.svg');
+  background-size: cover;
+  height: 60px;
+  width: 60px;
+}
+.box2 {
+  background-image: url('/p2.svg');
+  background-size: cover;
+  height: 60px;
+  width: 60px;
+}
+.box3 {
+  background-image: url('/p3.svg');
+  background-size: cover;
+  height: 60px;
+  width: 60px;
+}
+.box4 {
+  background-image: url('/p4.svg');
+  background-size: cover;
+  height: 60px;
+  width: 60px;
+}
+.box5 {
+  background-image: url('/p5.svg');
+  background-size: cover;
+  height: 60px;
+  width: 60px;
+}
+/* .sketch1 {
+  position: relative;
+  background-image: url('/ske1.jpg');
+  background-size: cover;
+  width: 300px; 
+  height: 300px; 
+  overflow: hidden;
+  margin: 20px;
+
+}
+.sketch2 {
+  position: relative;
+  background-size: cover;
+  width: 300px; 
+  height: 300px;
+  overflow: hidden;
+  background-image: url('/ski2.svg'); 
+  margin: 20px;
+} */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease-out forwards;
+}
+
+.animate-fade-in-delay {
+  animation: fadeIn 1s ease-out 0.5s forwards;
+}
