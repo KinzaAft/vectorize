@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import Image from "next/image"; // Importing Next.js Image component
 
 interface BoxData {
   [key: string]: {
@@ -97,7 +98,7 @@ const Secondcompo: React.FC = () => {
               className="flex flex-col justify-center items-center text-center cursor-pointer"
               onClick={() => handleBoxClick(boxId)}
             >
-              <div className={`${boxId} h-[50px] w-[50px] sm:h-[60px] sm:w-[60px] md:h-[90px] md:w-[90px] rounded-lg`}></div>
+              <div className={`h-[50px] w-[50px] sm:h-[60px] sm:w-[60px] md:h-[90px] md:w-[90px] rounded-lg bg-gray-200`} />
               <p className="font-bold text-sm sm:text-base md:text-[20px] mt-2">
                 {boxData[boxId].title}
               </p>
@@ -125,25 +126,29 @@ const Secondcompo: React.FC = () => {
           </div>
 
           {/* Right Section */}
-          <div className="sec-two w-[50%] flex flex-col md:flex-row justify-center items-center md:justify-between mt-6 md:mt-0 m-auto ">
-  {/* Sketch 1 */}
-  <div className="sketch1 h-[230px] w-[190px]  md:h-[300px] md:w-[250px] rounded-lg overflow-hidden mt-8 md:mt-0 ">
-    <img
-      src={boxData[selectedBox].images.sketch1}
-      alt="Sketch 1"
-      className="w-full h-full object-cover rounded-lg"
-    />
-  </div>
+          <div className="sec-two w-full md:w-[50%] flex flex-col md:flex-row justify-center items-center md:justify-between mt-6 md:mt-0 mx-auto">
+            {/* Sketch 1 */}
+            <div className="sketch1 h-[230px] w-[190px] md:h-[300px] md:w-[250px] rounded-lg overflow-hidden mt-8 md:mt-0">
+              <Image
+                src={boxData[selectedBox].images.sketch1}
+                alt="Sketch 1"
+                width={250}
+                height={300}
+                className="w-full h-full object-cover rounded-lg"
+              />
+            </div>
 
-  {/* Sketch 2 */}
-  <div className="sketch2 h-[230px] w-[190px]    md:h-[300px] md:w-[250px] rounded-lg overflow-hidden mt-8 md:mr-8  md:mt-0 md:ml-[30px]">
-    <img
-      src={boxData[selectedBox].images.sketch2}
-      alt="Sketch 2"
-      className="w-full h-full object-cover rounded-lg"
-    />
-  </div>
-</div>
+            {/* Sketch 2 */}
+            <div className="sketch2 h-[230px] w-[190px] md:h-[300px] md:w-[250px] rounded-lg overflow-hidden mt-8 md:mr-8 md:mt-0 md:ml-[30px]">
+              <Image
+                src={boxData[selectedBox].images.sketch2}
+                alt="Sketch 2"
+                width={250}
+                height={300}
+                className="w-full h-full object-cover rounded-lg"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>
