@@ -90,8 +90,7 @@ const Secondcompo: React.FC = () => {
               className="flex flex-col justify-center items-center text-center cursor-pointer"
               onClick={() => setSelectedBox(boxId)}
             >
-              <div className="h-[50px] w-[50px] sm:h-[60px] sm:w-[60px] md:h-[90px] md:w-[90px] rounded-lg bg-gray-200" />
-              <p className="font-bold text-sm sm:text-base md:text-[20px] mt-2">
+                <div className={`${boxId} h-[50px] w-[50px] sm:h-[60px] sm:w-[60px] md:h-[90px] md:w-[90px] rounded-lg`}></div>              <p className="font-bold text-sm sm:text-base md:text-[20px] mt-2">
                 {boxData[boxId].title}
               </p>
             </div>
