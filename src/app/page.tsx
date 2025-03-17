@@ -1,6 +1,8 @@
 'use client';;
 import { useState } from 'react'; // Import useState for handling file state
 import Header from './components/header';
+import Image, { StaticImageData } from 'next/image';
+
 import Secondcompo from './components/secondcompo';
 import Footer from './components/footer';
 
