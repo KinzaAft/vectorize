@@ -125,30 +125,26 @@ const Secondcompo: React.FC = () => {
             </ol>
           </div>
 
-          {/* Right Section */}
-          <div className="sec-two w-full md:w-[50%] flex flex-col md:flex-row justify-center items-center md:justify-between mt-6 md:mt-0 mx-auto">
-            {/* Sketch 1 */}
-            <div className="sketch1 h-[230px] w-[190px] md:h-[300px] md:w-[250px] rounded-lg overflow-hidden mt-8 md:mt-0">
-              <Image
-                src={boxData[selectedBox].images.sketch1}
-                alt="Sketch 1"
-                width={250}
-                height={300}
-                className="w-full h-full object-cover rounded-lg"
-              />
-            </div>
+                 {/* Right Section */}
+          <div className="sec-two w-[50%] flex flex-col md:flex-row justify-center items-center md:justify-between mt-6 md:mt-0 m-auto ">
+  {/* Sketch 1 */}
+  <div className="sketch1 h-[230px] w-[190px]  md:h-[300px] md:w-[250px] rounded-lg overflow-hidden mt-8 md:mt-0 ">
+    <img
+      src={boxData[selectedBox].images.sketch1}
+      alt="Sketch 1"
+      className="w-full h-full object-cover rounded-lg"
+    />
+  </div>
 
-            {/* Sketch 2 */}
-            <div className="sketch2 h-[230px] w-[190px] md:h-[300px] md:w-[250px] rounded-lg overflow-hidden mt-8 md:mr-8 md:mt-0 md:ml-[30px]">
-              <Image
-                src={boxData[selectedBox].images.sketch2}
-                alt="Sketch 2"
-                width={250}
-                height={300}
-                className="w-full h-full object-cover rounded-lg"
-              />
-            </div>
-          </div>
+  {/* Sketch 2 */}
+  <div className="sketch2 h-[230px] w-[190px]    md:h-[300px] md:w-[250px] rounded-lg overflow-hidden mt-8 md:mr-8  md:mt-0 md:ml-[30px]">
+    <img
+      src={boxData[selectedBox].images.sketch2}
+      alt="Sketch 2"
+      className="w-full h-full object-cover rounded-lg"
+    />
+  </div>
+</div>
         </div>
       </div>
     </div>
