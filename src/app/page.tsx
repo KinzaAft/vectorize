@@ -2,6 +2,8 @@
 import { useState } from 'react'; // Import useState for handling file state
 import Header from './components/header';
 import Image from 'next/image';
+import skillData from './data/data';
+
 
 import Secondcompo from './components/secondcompo';
 import Footer from './components/footer';
