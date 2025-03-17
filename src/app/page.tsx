@@ -1,10 +1,7 @@
-'use client';
-import Image, { StaticImageData } from 'next/image';
+'use client';;
 import { useState } from 'react'; // Import useState for handling file state
 import Header from './components/header';
-import ImageComparisonSlider from './components/ImageComparisonSlider';
 import Secondcompo from './components/secondcompo';
-import skillData from './data/data';
 import Footer from './components/footer';
 
 export default function Home() {
