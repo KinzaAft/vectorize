@@ -1,5 +1,4 @@
 "use client";
-
 import React from "react";
 import Header from "../components/header";
 import Footer from "../components/footer";
@@ -101,9 +100,10 @@ function AboutUs() {
             Ready to Transform Your Images?
           </h2>
           <p className="text-gray-600 text-center max-w-2xl mx-auto mb-6 animate-fade-in-delay">
-            Start converting your images into stunning vectors today. It's fast,
-            easy, and free!
-          </p>
+  Start converting your images into stunning vectors today. It&apos;s fast,
+  easy, and free!
+</p>
+
           <button className="bg-[#255392] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#1a3a6b] transition-colors duration-300 animate-fade-in-delay">
             Get Started
           </button>
