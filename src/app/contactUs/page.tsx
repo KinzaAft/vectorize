@@ -23,8 +23,8 @@ export default function ContactUs() {
             Contact Us
           </h1>
           <p className="text-gray-300 text-base md:text-lg mb-8">
-            Have questions or need assistance? We're here to help! Reach out to
-            us anytime.
+          Have questions or need assistance? We&apos;re here to help! Reach out to us anytime.
+
           </p>
         </div>
       </div>
